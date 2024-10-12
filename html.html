@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            
+        }
+        .header{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding: 5px 153px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .some{
+            display: flex;
+            align-items: center;
+            gap: 13px;
+           
+        }
+        .some .search{
+            display: flex;
+            border-bottom: 1px solid black; 
+
+        }
+        .some .search input{
+            border: none;
+            background-color: unset;
+            outline: none;
+        }
+        input::placeholder{
+            color: black;
+        }
+        .some .search i {
+            margin-right:5px;
+            margin-top: 0px;
+        }
+
+        .some a{
+            text-decoration: none;
+        }
+       
+        main .notifiction{
+            background-color: yellow;
+            padding: 40px;
+            text-align: center;
+            color:rgb(0, 0, 12);
+        }
+        main .bg-image{
+            width: 100%;
+            height: 100vh;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="/imgs/430856544_1139181610592554_2339378024970707628_n.png" alt="" style="width: 125px; height: 35px; margin-left: 155px;">
+        </div>
+        <div class="some">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search">
+            </div>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-gear"></i>
+            <span><a href="#">Login</a></span>
+        </div>
+    </div>
+    <main>
+        <div class="notifiction">
+            <b>First-Time Shoppers Rejoice: Register & Enjoy a $5 Welcome Offer on Us! </b> <br>
+            <span>Terms and Conditions Apply.</span>
+        </div>
+        <div class="bg-image">
+            <img src="/imgs/462546136_1825935691272600_6111257497560308144_n.png" alt="" width="100%">
+        </div>
+        <!-- ..... -->
+    </main>
+</body>
+<script>
+    var header = document.querySelector('header');
+    var main   = document.querySelector('main');
+    var getHight = header.clientHeight;
+    main.style.marginTop = getHight+"px";
+</script>
+</html>
